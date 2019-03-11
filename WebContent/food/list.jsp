@@ -16,7 +16,7 @@ try{
 	PreparedStatement ps = DBCon.getCon().prepareStatement(sql);
 	ResultSet rs = ps.executeQuery();
 	out.write("<table border=\"1\">");
-	while(rs.next()){
+	while(rs.next()){ 
 		out.write("<tr>"); 
 		out.write("<td>" + rs.getInt("food_num") + "</td>");
 		out.write("<td>" + rs.getString("food_name") + "</td>");
