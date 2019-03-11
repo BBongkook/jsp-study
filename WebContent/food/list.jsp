@@ -17,7 +17,7 @@ try{
 	ResultSet rs = ps.executeQuery();
 	out.write("<table border=\"1\">");
 	while(rs.next()){
-		out.write("<tr>");
+		out.write("<tr>"); 
 		out.write("<td>" + rs.getInt("food_num") + "</td>");
 		out.write("<td>" + rs.getString("food_name") + "</td>");
 		out.write("<td>" + rs.getInt("food_price") + "</td>");
