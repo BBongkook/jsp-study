@@ -40,19 +40,9 @@ public class UserServiceImpl implements UserService {
 		return udao.deleteUser(user);
 	}
 
-	public static void main(String[] args) {
-		UserService us = new UserServiceImpl();
-		Map<String,String> map = new HashMap<>();
-		System.out.println(us.selectUserList(null));
-//		map.put("ui_num", "64");
-//		map.put("ui_name", "개나리");
-//		map.put("ui_age", "23");
-//		map.put("ui_id", "power");
-//		System.out.println(us.insertUser(map));
-//		System.out.println(us.selectUser(map));
-//		System.out.println(us.deleteUser(map));
+	@Override
+	public Map<String, String> login(String uiId) {
 		
-		
-		
+		return udao.selectUserById(uiId);
 	}
 }
