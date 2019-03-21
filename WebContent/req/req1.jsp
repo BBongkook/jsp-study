@@ -12,4 +12,4 @@ RequestDispatcher rd = request.getRequestDispatcher("/req/req2.jsp");
 rd.forward(request, response);
 %>
 
-<%=pageContext.getAttribute("난")%>
+<%-- <%=pageContext.getAttribute("난")%> --%>
